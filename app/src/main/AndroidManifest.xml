@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".IncomeActivity" />
-        <activity android:name=".OutcomeActivity"></activity>
+        <activity android:name=".OutcomeActivity" />
+        <activity android:name=".AddFinances"></activity>
     </application>
 
 </manifest>
