@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FinancialFlow</string>
+
+    <string-array name="financialFlowTypes">
+        <item>Ienākumi</item>
+        <item>Izdevumi</item>
+    </string-array>
 </resources>
