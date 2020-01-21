@@ -1,10 +1,12 @@
 package com.example.rihards.financialflow;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -12,6 +14,10 @@ import java.util.Calendar;
 import java.util.Locale;
 
 public class MainScreen extends AppCompatActivity {
+
+    private static final String TAG = "Main Activity";
+
+    DatabaseHelper databaseHelper;
 
     private Button btnInc, btnOut, btnExit, btnAdd;
     private TextView txtMonth;
@@ -55,6 +61,14 @@ public class MainScreen extends AppCompatActivity {
                 closeFinancialFlowApp();
             }
         });
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openAddFinancesActivity();
+            }
+        });
+
+        databaseHelper = new DatabaseHelper(this);
     }
 
     public void addNewData(){
@@ -75,6 +89,11 @@ public class MainScreen extends AppCompatActivity {
 
     public void openOutcomeActivity(){
         Intent intent = new Intent(this, OutcomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void openAddFinancesActivity(){
+        Intent intent = new Intent(this, AddFinances.class);
         startActivity(intent);
     }
 }
