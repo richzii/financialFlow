@@ -20,7 +20,7 @@
         android:src="@drawable/flow_bg" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerType"
         android:layout_width="230dp"
         android:layout_height="30dp"
         android:layout_alignParentStart="true"
@@ -38,11 +38,12 @@
         android:id="@+id/text_ChooseType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/spinner"
+        android:layout_alignStart="@+id/spinnerType"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="94dp"
-        android:text="Veids:" />
+        android:text="Veids:"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/text_pickDate"
@@ -56,6 +57,7 @@
         android:layout_marginEnd="77dp"
         android:text="Izvēlies datumu"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
     <EditText
@@ -71,22 +73,24 @@
         android:alpha="0.7"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="Ievadi daudzumu (eur)" />
+        android:hint="Ievadi daudzumu (eur)"
+        android:textColor="#FFFFFF" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/piezime"
         android:layout_width="228dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="78dp"
-        android:layout_marginEnd="78dp"
-        android:layout_marginBottom="244dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="273dp"
         android:alpha="0.7"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="Piezīme" />
+        android:hint="Piezīme"
+        android:textColor="#FFFFFF" />
 
     <Button
         android:id="@+id/button_addToDb"
